@@ -1,10 +1,11 @@
 import { Router } from 'express'
+import { Connection } from 'typeorm'
 import { Product } from '../entities/product'
 import { ProductController } from '../controllers/product'
 
 const router = Router()
 
-export default function (db) {
+export default function (db: Connection) {
   const productRepository = db.getRepository(Product)
   const controller = new ProductController(productRepository)
 

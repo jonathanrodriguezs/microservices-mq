@@ -1,9 +1,9 @@
 import * as express from 'express'
 import * as cors from 'cors'
-import { createConnection } from 'typeorm'
+import { createConnection, Connection } from 'typeorm'
 import productRoutes from './routes/product'
 
-createConnection().then(db => {
+createConnection().then((db: Connection) => {
   const app = express()
   const port = process.env.PORT || 8000
 
@@ -11,7 +11,7 @@ createConnection().then(db => {
 
   app.use(express.json())
 
-  app.use('/api/products', productRoutes)
+  app.use('/api/products', productRoutes(db))
 
   app.listen(port, () => {
     console.log(`Listening on port ${port}`)
