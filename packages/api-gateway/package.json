@@ -1,0 +1,30 @@
+{
+  "name": "@microservices/gateway",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Jonathan Rodriguez Sanchez <jonathan.rodriguez.sanchez@u-erre.mx>",
+  "homepage": "https://github.com/jonathanrodriguezs/microservices-mq#readme",
+  "license": "ISC",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonathanrodriguezs/microservices-mq.git"
+  },
+  "scripts": {
+    "watch": "ts-node-dev --respawn index.dev.ts",
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/jonathanrodriguezs/microservices-mq/issues"
+  },
+  "devDependencies": {
+    "module-alias": "^2.2.2",
+    "ts-node-dev": "^1.1.6"
+  }
+}

@@ -1,11 +1,12 @@
 {
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "lib": ["ES5", "ES6", "DOM"],
+    "lib": ["ES5", "ES6"],
     "target": "ES5",
     "module": "CommonJS",
     "moduleResolution": "Node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "outDir": "lib"
+    "outDir": "./lib"
   }
 }
